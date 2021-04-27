@@ -1,0 +1,40 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    border-radius: 1em;
+    border-color: #a3a2a2;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #ffffff;
+  }
+  .parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .button-wrapper {  
+    margin-left: 2rem;   
+  }
+
+  .mat-header-cell {
+   flex-direction: column;
+   text-align: center;
+   justify-content: center; 
+  }
+
+  .mat-cell {
+   text-align: center;
+   justify-content:center;
+  }
+
+  input, textarea {
+   outline: none;
+   border: none;
+   border: solid 1px #ffffff;
+   text-align: center;
+  }
+

@@ -1,0 +1,56 @@
+<h2>Current time status</h2>
+
+<div class="no-style" style="margin-left: 4px">
+	<div class="container">
+        
+<p> Date today: 27.04.2021 </p>
+
+<p> User id: 1 </p>
+
+<form class="formwidth" (ngSubmit)="onSubmit()" #myForm="ngForm">
+    <table class="fullwidth" cellspacing="0">
+        <tr>
+                <mat-form-field class="fullwidth">
+                    <input matInput placeholder="Enter User Name" id="checkin" [(ngModel)]="checkin.checkin" name="checkin">
+                </mat-form-field>
+        </tr>    
+    </table>
+    <p>
+        <button  type="submit" md-raised-button>Check</button>
+    </p>
+</form>
+
+
+
+<hr>
+<p>Daily information:</p>
+<div>
+    <table mat-table [dataSource]="dataSource" #elementsForm border="1">
+   
+        <ng-container matColumnDef="day">
+          <th mat-header-cell *matHeaderCellDef> Week day </th>
+          <td mat-cell *matCellDef="let element; let index = index"> 
+            <input type="day" name="day-{{index}}" [(ngModel)]="element.day"/>
+          </td>
+        </ng-container>
+       <!---->
+        <ng-container matColumnDef="from">
+          <th mat-header-cell *matHeaderCellDef> From </th>
+          <td mat-cell *matCellDef="let element; let index = index"> 
+            <input type="text" name="from-{{index}}" [(ngModel)]="element.from"/>
+          </td>
+        </ng-container>
+        
+        <ng-container matColumnDef="till">
+          <th mat-header-cell *matHeaderCellDef> Till </th>
+          <td mat-cell *matCellDef="let element; let index = index"> 
+            <input type="text" name="till-{{index}}" [(ngModel)]="element.till"/>
+          </td>
+        </ng-container>
+        
+        
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>  
+
+</div>

@@ -1,0 +1,21 @@
+
+<div class="header">
+  <h1> Happy life </h1>
+</div>
+
+<mat-sidenav-container>
+    <mat-sidenav opened mode="side">
+      <mat-nav-list>
+        <a mat-list-item [routerLink]="['page-one']">Flexi status</a>
+        <a mat-list-item [routerLink]="['page-two']">Current time status</a>
+        <a mat-list-item [routerLink]="['page-three']">Mark Absents</a>
+        <a mat-list-item [routerLink]="['page-four']">Schelude</a>
+        <a mat-list-item [routerLink]="['page-five']">Fix college flexi time</a>
+        <a mat-list-item [routerLink]="['page-six']">Check employee flexi time</a>
+        <a mat-list-item >Log out</a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>

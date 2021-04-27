@@ -1,0 +1,45 @@
+<ngx-spinner
+bdColor="rgba(51,51,51,0.4)"
+size="medium"
+color="#fff"
+type="ball-scale-multiple"
+ >
+<p style="font-size: 20px; color: white">Loading...</p>
+</ngx-spinner>
+
+<h2>Current time status</h2>
+
+<div class="no-style" style="margin-left: 4px">
+	<div class="container">
+        
+<p> Date today: 27.04.2021 </p>
+
+<p> User id: 1 </p>
+
+<form class="formwidth" (ngSubmit)="onSubmit()" #myForm="ngForm">
+    <table class="fullwidth" cellspacing="0">
+        <tr>
+                <mat-form-field class="fullwidth">
+                    <input matInput placeholder="Checkin time" id="checkin" [(ngModel)]="checkin.checkin" name="checkin">
+                </mat-form-field>
+        </tr>    
+    </table>
+    <p>
+        <button  type="submit" md-raised-button>Approve</button>
+    </p>
+</form>
+
+<form class="formwidth" (ngSubmit)="onSubmit1()" #myForm="ngForm">
+    <table class="fullwidth" cellspacing="0">
+        <tr>
+                <mat-form-field class="fullwidth">
+                    <input matInput placeholder="Checkout time" id="checkout" [(ngModel)]="checkout.checkout" name="checkout">
+                </mat-form-field>
+        </tr>
+    </table>
+    <p>
+        <button class="btn btn-primary" type="submit" md-raised-button>Approve</button>
+    </p>
+</form>
+
+
