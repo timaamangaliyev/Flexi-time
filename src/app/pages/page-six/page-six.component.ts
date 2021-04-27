@@ -18,13 +18,7 @@ export class PageSixComponent {
   onSubmit() { 
     //alert('Thanks for submitting! Data: ');
     
-    this.dataSource.data =
-    [
-    {day: "24.04.2021", from: "09:00",  till: "19:30"},
-    {day: "25.04.2021", from: "10:30",  till: "20:17"},
-    {day: "26.04.2021", from: "09:00",  till: "18:00"},
-    {day: "27.04.2021", from: null,  till: null},
-    ]
+  
   }
 
 }
