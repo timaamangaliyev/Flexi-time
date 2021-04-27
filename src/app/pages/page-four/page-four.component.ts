@@ -39,16 +39,7 @@ export class PageFourComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.dataSource.data =
-    [
-    {day: "Monday", from: "09:00",  till: "18:00", planedWork:"office", planedWorkHours:8},
-    {day: "Tuesday", from: "09:00",  till: "18:00", planedWork:"office", planedWorkHours:8},
-    {day: "Wensday", from: "09:00",  till: "18:00", planedWork:"vendor metting at 10:30", planedWorkHours:8},
-    {day: "Thusday", from: null,  till: null, planedWork:null, planedWorkHours:null},
-    {day: "Friday", from: null,  till: null, planedWork:null, planedWorkHours:null},
-    {day: "Saturday", from: null,  till: null, planedWork:null, planedWorkHours:null},
-    {day: "Sunday", from: null,  till: null, planedWork:null, planedWorkHours:null},
-     ]
+    
   };
 
 }
