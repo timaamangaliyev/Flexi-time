@@ -1,12 +1,15 @@
 # Happy-life
 Flexi time for Happy-life company
 
+Install TypeSpript:
+1) npm install typescript --save-dev
 
-Install NodeJS
+
+Install NodeJS:
 1) npm install
 2) bower install
 
-Running the Samples
+Running project:
 1) ng build
 2) ng serve
 3) open http://localhost:4200/
