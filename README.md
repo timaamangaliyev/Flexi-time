@@ -1,4 +1,4 @@
-# Happy-life
+# Flexi-time
 Flexi time for Happy-life company
 
 Install TypeSpript:
